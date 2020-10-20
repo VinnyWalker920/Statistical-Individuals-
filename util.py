@@ -1,8 +1,10 @@
 from math import ceil
 from random import randint
+from statistics import mean
+import numpy.random as np
+from functools import reduce
+import operator
 
-import numpy as np
-from generation import Member
 
 
 def GeneticCode():
@@ -38,29 +40,18 @@ def Crossover(a, b):
 def Mutaion(code):
     finalCode = []
     for i in code:
-        if len(i) <= 3:
-            finalCode.append(i)
-        else:
-            x = i.copy()
-            x[randint(0, len(x) - 1)] = randint(1, 100)
-            finalCode.append(x)
+        x = i.copy()
+        x[randint(0, len(x) - 1)] = randint(mean(i), 100)
+        finalCode.append(x)
     return finalCode
 
+def prod(x):
+    return reduce(operator.mul,x,1)
 
-def ProCreate(dom, sub):
-    children = []
-    birthrate = randint(1, 2)
-    M = dom
-    F = sub
-    CrossoverCode = Crossover(M, F)
-    for i in range(birthrate):
-        c = Member()
-        c.SetCode(Mutaion(CrossoverCode))
-        children.append(c)
 
-    return children
 
-# MAXIMUM CASE
+
+# #MAXIMUM CASE
 # lk = []
 # for i in range(20):
 #     code = []
