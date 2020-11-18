@@ -1,0 +1,27 @@
+
+upython:S100F"RRename method "CropPopulation" to match the regular expression ^[a-z_][a-z0-9_]*$.(±ÌºÁùÿÿÿÿ8Ö„Ú‡Ú.
+spython:S116"PRename this field "Children" to match the regular expression ^[_a-z][_a-z0-9]*$.(­¤è°øÿÿÿÿ8Ö„Ú‡Ú.
+…python:S117("gRename this local variable "AmmountOfOptimalValues" to match the regular expression ^[_a-z][a-z0-9_]*$.(·Ûè8Öø¼‹Ú.
+upython:S116"RRename this field "Population" to match the regular expression ^[_a-z][_a-z0-9]*$.(Şçè’øÿÿÿÿ8Ö„Ú‡Ú.
+python:S117N"^Rename this local variable "CrossoverCode" to match the regular expression ^[_a-z][a-z0-9_]*$.(øë“”úÿÿÿÿ8Ö„Ú‡Ú.
+†python:S117$"cRename this local variable "avgPredictedNumber" to match the regular expression ^[_a-z][a-z0-9_]*$.(·¤“°şÿÿÿÿ8Ö„Ú‡Ú.
+rpython:S1006"ORename method "AddChildren" to match the regular expression ^[a-z_][a-z0-9_]*$.(¹ÃÃ¯üÿÿÿÿ8Ö„Ú‡Ú.
+npython:S1009"QRename method "MergeChildren" to match the regular expression ^[a-z_][a-z0-9_]*$.(­ïµQ8Ö„Ú‡Ú.
+jpython:S1001"LRename method "Populate" to match the regular expression ^[a-z_][a-z0-9_]*$.(ãÙÏ«8Ö„Ú‡Ú.
+vpython:S117"XRename this parameter "startingSize" to match the regular expression ^[_a-z][a-z0-9_]*$.(åÍåµ8Ö„Ú‡Ú.
+npython:S100"KRename method "SetCode" to match the regular expression ^[a-z_][a-z0-9_]*$.(‰ú¾æıÿÿÿÿ8Ö„Ú‡Ú.
+vpython:S1171"XRename this parameter "startingSize" to match the regular expression ^[_a-z][a-z0-9_]*$.(ãÙÏ«8Ö„Ú‡Ú.
+Opython:S5806*"+Rename this variable; it shadows a builtin.(ŒËÚœùÿÿÿÿ8Ö„Ú‡Ú.
+…python:S117%"gRename this local variable "highestPredictedNumber" to match the regular expression ^[_a-z][a-z0-9_]*$.(½ºî¯8Ö„Ú‡Ú.
+Ipython:S1481O"%Remove the unused local variable "i".(Åëşíüÿÿÿÿ8Ö„Ú‡Ú.
+spython:S1542I"ORename function "ProCreate" to match the regular expression ^[a-z_][a-z0-9_]*$.(šÂ×–ıÿÿÿÿ8Ö„Ú‡Ú.
+upython:S117>"RRename this parameter "OptToo" to match the regular expression ^[_a-z][a-z0-9_]*$.(åŞâşÿÿÿÿ8Ò‰ïŠÚ.
+upython:S116"WRename this field "PredictorNumber" to match the regular expression ^[_a-z][_a-z0-9]*$.(úÃ±å8Ö„Ú‡Ú.
+python:S117)"jRename this local variable "percentileOfOptimalValues" to match the regular expression ^[_a-z][a-z0-9_]*$.(£ˆ§äúÿÿÿÿ8Ö„Ú‡Ú.
+Ipython:S14812"%Remove the unused local variable "i".(¢ÀÃ®ÿÿÿÿÿ8Ö„Ú‡Ú.
+upython:S100>"RRename method "SortPopulation" to match the regular expression ^[a-z_][a-z0-9_]*$.(åŞâşÿÿÿÿ8Ö„Ú‡Ú.
+{python:S117"]Rename this parameter "removalPorportion" to match the regular expression ^[_a-z][a-z0-9_]*$.(åÍåµ8Ö„Ú‡Ú.
+apython:S1481)"=Remove the unused local variable "percentileOfOptimalValues".(£ˆ§äúÿÿÿÿ8¸ÑÀ‹Ú.
+python:S117#"aRename this local variable "sizeOfPopulation" to match the regular expression ^[_a-z][a-z0-9_]*$.(ëœ„å8Ö„Ú‡Ú.
+Gpython:S108`")Either remove or fill this block of code.(ã‘Û¾8Ö„Ú‡Ú.
+rpython:S116"ORename this field "RawCode" to match the regular expression ^[_a-z][_a-z0-9]*$.(ùÈŒúıÿÿÿÿ8Ö„Ú‡Ú.

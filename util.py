@@ -1,5 +1,6 @@
 from math import ceil
 from random import randint
+from itertools import zip_longest
 from statistics import mean
 import numpy.random as np
 from functools import reduce
@@ -10,16 +11,24 @@ import operator
 def GeneticCode():
     Code = []
     for i in range(20):
-        strand = np.randint(100, size=i + 1)
+        # strand = np.uniform(low=0.01, high=1.0, size=i + 1)
+        strand = np.randint(1, 100, size=i + 1)
         Code.append(strand)
     return Code
 
 
-def TupleClassSort(TupleList):
+def MaxTupleClassSort(TupleList):
     listObject = list(TupleList)
     listObject.sort()
     listObject.reverse()
     return [i for x, _, i in listObject]
+
+def SpecificTupleClassSort(num, TupleList):
+    Greater = [i for i in TupleList if i[0] >= num]
+    Lesser = sorted([i for i in TupleList if i[0] < num], reverse=True)
+    Zipper = list(zip_longest(Greater, Lesser, fillvalue="x"))#[((val,obj),(val,obj)),((val,obj),(val,obj))...]
+    SortedTuples = [item for obj in Zipper for item in obj if item is not "x"]
+    return [i for x, i in SortedTuples]
 
 
 def RemovePercent(listobj, porportion):
@@ -41,7 +50,8 @@ def Mutaion(code):
     finalCode = []
     for i in code:
         x = i.copy()
-        x[randint(0, len(x) - 1)] = randint(mean(i), 100)
+        x[randint(0, len(x) - 1)] = np.randint(1, 100)
+        # x[randint(0, len(x) - 1)] = np.uniform(low=0.01, high=1.0)
         finalCode.append(x)
     return finalCode
 
