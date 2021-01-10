@@ -1,26 +1,50 @@
-import pprint
+from itertools import zip_longest
 from math import ceil
-from random import choice, randint, random
-from statistics import mean
+from random import randint, choice
+
+import numpy as np
 from scipy.stats import percentileofscore
-from util import MaxTupleClassSort, RemovePercent, GeneticCode, Crossover, Mutaion, SpecificTupleClassSort
 
-pp = pprint.PrettyPrinter(width=120, depth=25)
-
-
-class Member:
-    def __init__(self):
-        self.RawCode = GeneticCode()
-        # Predictor Number Mean(Sigma X 1-20)
-        self.PredictorNumber = self.RawCode[19][0]
-
-    def SetCode(self, code):
-        self.RawCode = code
-        self.PredictorNumber = mean([i[0] for i in self.RawCode])
-    def __repr__(self):
-        return self.RawCode
+from subject import Member
 
 
+def MaxTupleClassSort(TupleList):
+    listObject = list(TupleList)
+    listObject.sort()
+    listObject.reverse()
+    return [i for x, _, i in listObject]
+
+def SpecificTupleClassSort(num, TupleList):
+    Greater = [i for i in TupleList if i[0] >= num]
+    Lesser = sorted([i for i in TupleList if i[0] < num], reverse=True)
+    Zipper = list(zip_longest(Greater, Lesser, fillvalue="x"))#[((val,obj),(val,obj)),((val,obj),(val,obj))...]
+    SortedTuples = [item for obj in Zipper for item in obj if item is not "x"]
+    return [i for x, i in SortedTuples]
+
+
+def RemovePercent(listobj, porportion):
+    NumberRemoved = ceil(porportion * len(listobj))
+    return listobj[0:(-1 * NumberRemoved)]
+
+
+def Crossover(a, b):
+    newCode = []
+    for i in range(20):
+        if i % 2 == 0:  # even
+            newCode.append(a[i])
+        else:  # odd
+            newCode.append(b[i])
+    return newCode
+
+
+def Mutaion(code):
+    finalCode = []
+    for i in code:
+        x = i.copy()
+        # x[randint(0, len(x) - 1)] = np.random.randint(1, 100)
+        x[randint(0, len(x) - 1)] = np.random.uniform(low=0.01, high=1.0)
+        finalCode.append(x)
+    return finalCode
 
 class Environment:
     def __init__(self, startingSize, removalPorportion):
@@ -33,17 +57,17 @@ class Environment:
         #TODO: make Percentile only show when it is MAX optimizing
         #TODO: make 'highestPredictedNumber' replaceable by
         sizeOfPopulation = len(self.Population)
-        avgPredictedNumber = mean([i.PredictorNumber for i in self.Population])
+        avgPredictedNumber = np.mean([i.PredictorNumber for i in self.Population])
         highestPredictedNumber = [i.PredictorNumber for i in self.Population]
         highestPredictedNumber.sort()
         highestPredictedNumber.reverse()
         AmmountOfOptimalValues = len([i.PredictorNumber for i in self.Population if i == 50])#TODO: Make Dynamic
-        percentileOfOptimalValues = percentileofscore(sorted([i.PredictorNumber for i in self.Population]),80)
+        percentileOfOptimalValues = percentileofscore(sorted([i.PredictorNumber for i in self.Population]),.9)
         str = f"Population Size: {sizeOfPopulation} \n"\
               f"Average Score: {avgPredictedNumber} \n" \
-              f"Ammount Of Optimal Scores: {AmmountOfOptimalValues} \n" \
-              # f"Highest Score: {highestPredictedNumber[0]}\n"\
-              # f"Percentile of Most Optimal Score: {percentileOfOptimalValues}"
+              f"Highest Score: {highestPredictedNumber[0]}\n"\
+              f"Percentile of Most Optimal Score: {percentileOfOptimalValues}"
+              # f"Ammount Of Optimal Scores: {AmmountOfOptimalValues} \n" \
         return str
 
     def Populate(self, startingSize):
@@ -85,7 +109,7 @@ def ProCreate(dom, sub):
 
 
 #Genetic Algorithm Implementation V1
-env = Environment(100, .65)
+env = Environment(100, .75)
 print("Starting Metrics: \n" + str(env) + "\n")
 for epoch in range(500):
     children = []
@@ -96,11 +120,10 @@ for epoch in range(500):
             pass
         for i in ProCreate(sup, inf):
             children.append(i)
-    env.SortPopulation(OptToo=50)
+    env.SortPopulation(OptToo="Max")
     env.CropPopulation()
     env.AddChildren(children)
     env.MergeChildren()
-    print("epoch " + str(epoch+1) + "/100000\n" + str(env) + "\n")
+    print("epoch " + str(epoch+1) + "/500\n" + str(env) + "\n")
 
 env.SortPopulation()
-# pp.pprint([i.RawCode for i in env.Population])
