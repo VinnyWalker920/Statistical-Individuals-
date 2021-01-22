@@ -1,21 +1,0 @@
-
-Xpython:S5720Ö":Rename "x1" to "self" or add the missing "self" parameter.(ìÕ‹şùÿÿÿÿ
-Xpython:S5720¨":Rename "x1" to "self" or add the missing "self" parameter.(óˆ°¾ÿÿÿÿÿ
-jpython:S117¾"MRename this parameter "S" to match the regular expression ^[_a-z][a-z0-9_]*$.(¯ƒŒ®ÿÿÿÿÿ
-jpython:S117¾"MRename this parameter "T" to match the regular expression ^[_a-z][a-z0-9_]*$.(¯ƒŒ®ÿÿÿÿÿ
-Spython:S5720Ê":Rename "x1" to "self" or add the missing "self" parameter.(¼ÿ —
-jpython:S117ı"MRename this parameter "T" to match the regular expression ^[_a-z][a-z0-9_]*$.(İèÈÍøÿÿÿÿ
-epython:S1134†"LTake the required action to fix the issue indicated by this "FIXME" comment.(éÍšá
-gpython:S3358”"IExtract this nested conditional expression into an independent statement.(ƒÇ™ûùÿÿÿÿ
-opython:S1542¿"VRename function "StandardScore" to match the regular expression ^[a-z_][a-z0-9_]{2,}$.(»ìµŸ
-Spython:S5720Ğ":Rename "x1" to "self" or add the missing "self" parameter.(‘·‘¥
-epython:S1134¡"LTake the required action to fix the issue indicated by this "FIXME" comment.(Ì´÷™
-Rpython:S5720Æ":Rename "x1" to "self" or add the missing "self" parameter.(ÒØ¦
->python:S1481±"%Remove the unused local variable "i".(í««Š
-jpython:S1134²"LTake the required action to fix the issue indicated by this "FIXME" comment.(€çØÎùÿÿÿÿ
-rpython:S1192²"YDefine a constant instead of duplicating this literal "no median for empty data" 4 times.(ùÁı¹
-npython:S117ğ"VRename this local variable "Y_var" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ô¨áì
-fpython:S117‘	"NRename this parameter "G2" to match the regular expression ^[_a-z][a-z0-9_]*$.(™‡²
-Spython:S5720¾":Rename "x1" to "self" or add the missing "self" parameter.(½±Ÿ‡
-npython:S117ğ"VRename this local variable "X_var" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ô¨áì
-fpython:S117‘	"NRename this parameter "G1" to match the regular expression ^[_a-z][a-z0-9_]*$.(™‡²

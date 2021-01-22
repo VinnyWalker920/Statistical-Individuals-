@@ -1,0 +1,8 @@
+
+qpython:S117
+"URename this local variable "Code" to match the regular expression ^[_a-z][a-z0-9_]*$.(åùúÁûÿÿÿÿ
+gpython:S100"KRename method "SetCode" to match the regular expression ^[a-z_][a-z0-9_]*$.(‰ú¾æýÿÿÿÿ
+npython:S116"WRename this field "PredictorNumber" to match the regular expression ^[_a-z][_a-z0-9]*$.(úÃ±å
+npython:S1542	"QRename function "GeneticCode" to match the regular expression ^[a-z_][a-z0-9_]*$.(µ¡Éƒÿÿÿÿÿ
+kpython:S116"ORename this field "RawCode" to match the regular expression ^[_a-z][_a-z0-9]*$.(ùÈŒúýÿÿÿÿ
+Bpython:S125"Remove this commented out code.(â”±¦ûÿÿÿÿ8Ö¶ø¡ï.

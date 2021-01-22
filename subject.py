@@ -9,8 +9,8 @@ pp = pprint.PrettyPrinter(width=120, depth=25)
 def GeneticCode():
     Code = []
     for i in range(20):
-        strand = np.random.uniform(low=0.01, high=1.0, size=i + 1)
-        # strand = np.random.randint(1, 100, size=i + 1)
+        # strand = np.random.uniform(low=0.01, high=1.0, size=i + 1)
+        strand = np.random.randint(1, 100, size=i + 1)
         Code.append(strand)
     return Code
 
