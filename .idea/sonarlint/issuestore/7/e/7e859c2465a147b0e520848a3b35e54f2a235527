@@ -1,0 +1,43 @@
+
+spython:S1169"PRename this field "Children" to match the regular expression ^[_a-z][_a-z0-9]*$.(­¤θ°ψÿÿÿÿ8Γ ζάτ.
+spython:S1542e"ORename function "ProCreate" to match the regular expression ^[a-z_][a-z0-9_]*$.(ΒΧ–ύÿÿÿÿ8Γ ζάτ.
+upython:S100Z"RRename method "SortPopulation" to match the regular expression ^[a-z_][a-z0-9_]*$.(εήβώÿÿÿÿ8Γ ζάτ.
+upython:S1168"RRename this field "Population" to match the regular expression ^[_a-z][_a-z0-9]*$.(ήηθ’ψÿÿÿÿ8Γ ζάτ.
+rpython:S100R"ORename method "AddChildren" to match the regular expression ^[a-z_][a-z0-9_]*$.(ΉΓΓ―όÿÿÿÿ8Γ ζάτ.
+Ipython:S1481N"%Remove the unused local variable "i".(ΆΐΓ®ÿÿÿÿÿ8Γ ζάτ.
+ypython:S117"[Rename this local variable "listObject" to match the regular expression ^[_a-z][a-z0-9_]*$.(΄¦Λ·8Γ ζάτ.
+Ipython:S1481k"%Remove the unused local variable "i".(Ελώνόÿÿÿÿ8Γ ζάτ.
+€python:S117"]Rename this local variable "SortedTuples" to match the regular expression ^[_a-z][a-z0-9_]*$.(’ΉΒωόÿÿÿÿ8Γ ζάτ.
+vpython:S1542"WRename function "MaxTupleClassSort" to match the regular expression ^[a-z_][a-z0-9_]*$.(ήΜ›8Γ ζάτ.
+>python:S125"Remove this commented out code.(Θγ Η8βƒƒΰτ.
+>python:S125"Remove this commented out code.(ΖΤ¦8αΑƒΰτ.
+xpython:S117"URename this parameter "TupleList" to match the regular expression ^[_a-z][a-z0-9_]*$.(Β‚Νώÿÿÿÿ8Γ ζάτ.
+vpython:S117M"XRename this parameter "startingSize" to match the regular expression ^[_a-z][a-z0-9_]*$.(γΩΟ«8Γ ζάτ.
+upython:S117"WRename this local variable "Lesser" to match the regular expression ^[_a-z][a-z0-9_]*$.(ν°™8Γ ζάτ.
+jpython:S100M"LRename method "Populate" to match the regular expression ^[a-z_][a-z0-9_]*$.(γΩΟ«8Γ ζάτ.
+Opython:S5806F"+Rename this variable; it shadows a builtin.(ΛΪωÿÿÿÿ8Γ ζάτ.
+vpython:S117#"XRename this local variable "newCode" to match the regular expression ^[_a-z][a-z0-9_]*$.(— ν8Γ ζάτ.
+xpython:S117-"ZRename this local variable "finalCode" to match the regular expression ^[_a-z][a-z0-9_]*$.(χΙκ8Γ ζάτ.
+Bpython:S1251"Remove this commented out code.(Λυΰψÿÿÿÿ8Γ ζάτ.
+python:S117j"^Rename this local variable "CrossoverCode" to match the regular expression ^[_a-z][a-z0-9_]*$.(ψλ“”ϊÿÿÿÿ8Γ ζάτ.
+{python:S1176"]Rename this parameter "removalPorportion" to match the regular expression ^[_a-z][a-z0-9_]*$.(εΝεµ8Γ ζάτ.
+npython:S1542""ORename function "Crossover" to match the regular expression ^[a-z_][a-z0-9_]*$.(νοφΞ8Γ ζάτ.
+zpython:S117"WRename this local variable "Zipper" to match the regular expression ^[_a-z][a-z0-9_]*$.(„ÿφΐÿÿÿÿÿ8Γ ζάτ.
+…python:S117A"gRename this local variable "highestPredictedNumber" to match the regular expression ^[_a-z][a-z0-9_]*$.(½Ίξ―8Γ ζάτ.
+{python:S117"XRename this local variable "Greater" to match the regular expression ^[_a-z][a-z0-9_]*$.(”Ξ‹ÿÿÿÿÿ8Γ ζάτ.
+upython:S117Z"RRename this parameter "OptToo" to match the regular expression ^[_a-z][a-z0-9_]*$.(εήβώÿÿÿÿ8Γ ζάτ.
+python:S117"^Rename this local variable "NumberRemoved" to match the regular expression ^[_a-z][a-z0-9_]*$.(’‡΅Άώÿÿÿÿ8Γ ζάτ.
+Gpython:S108}")Either remove or fill this block of code.(γ‘ΫΎ8Γ ζάτ.
+qpython:S1542,"MRename function "Mutaion" to match the regular expression ^[a-z_][a-z0-9_]*$.(χΤπδψÿÿÿÿ8Γ ζάτ.
+wpython:S1542"SRename function "RemovePercent" to match the regular expression ^[a-z_][a-z0-9_]*$.(―όβ¥ψÿÿÿÿ8Γ ζάτ.
+python:S117@"cRename this local variable "avgPredictedNumber" to match the regular expression ^[_a-z][a-z0-9_]*$.(¦ΨΨ¤8Γ ζάτ.
+Ypython:S1481D":Remove the unused local variable "AmmountOfOptimalValues".(·Ϋθ8Γ ζάτ.
+€python:S1542"\Rename function "SpecificTupleClassSort" to match the regular expression ^[a-z_][a-z0-9_]*$.(Β‚Νώÿÿÿÿ8Γ ζάτ.
+spython:S117"URename this parameter "TupleList" to match the regular expression ^[_a-z][a-z0-9_]*$.(ήΜ›8Γ ζάτ.
+vpython:S1176"XRename this parameter "startingSize" to match the regular expression ^[_a-z][a-z0-9_]*$.(εΝεµ8Γ ζάτ.
+npython:S100U"QRename method "MergeChildren" to match the regular expression ^[a-z_][a-z0-9_]*$.(­οµQ8Γ ζάτ.
+python:S117E"jRename this local variable "percentileOfOptimalValues" to match the regular expression ^[_a-z][a-z0-9_]*$.(Ε®Κ‡8Γ ζάτ.
+upython:S100b"RRename method "CropPopulation" to match the regular expression ^[a-z_][a-z0-9_]*$.(±ΜΊΑωÿÿÿÿ8Γ ζάτ.
+python:S117?"aRename this local variable "sizeOfPopulation" to match the regular expression ^[_a-z][a-z0-9_]*$.(λ„ε8Γ ζάτ.
+…python:S117D"gRename this local variable "AmmountOfOptimalValues" to match the regular expression ^[_a-z][a-z0-9_]*$.(·Ϋθ8Γ ζάτ.
+upython:S5795"QReplace this "is not" operator with "!="; identity operator is not reliable here.(’ΉΒωόÿÿÿÿ8Γ ζάτ.

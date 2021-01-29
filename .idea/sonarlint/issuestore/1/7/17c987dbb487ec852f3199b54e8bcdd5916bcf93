@@ -1,22 +1,0 @@
-
-ppython:S1542""SRename function "RemovePercent" to match the regular expression ^[a-z_][a-z0-9_]*$.(¯üâ¥øÿÿÿÿ
-{python:S117"XRename this local variable "Greater" to match the regular expression ^[_a-z][a-z0-9_]*$.(”Î‹œÿÿÿÿÿ8¤¥±ŠÚ.
-vpython:S1542"WRename function "MaxTupleClassSort" to match the regular expression ^[a-z_][a-z0-9_]*$.(ŞŒÌ›8€«öŠÚ.
-xpython:S117"URename this parameter "TupleList" to match the regular expression ^[_a-z][a-z0-9_]*$.(Â‚Íşÿÿÿÿ8¤¥±ŠÚ.
-upython:S1542"QRename function "GeneticCode" to match the regular expression ^[a-z_][a-z0-9_]*$.(µ¡Éƒÿÿÿÿÿ8ŒÇ–Ô.
-vpython:S117("XRename this local variable "newCode" to match the regular expression ^[_a-z][a-z0-9_]*$.(— í8Á…©öÓ.
-€python:S1542"\Rename function "SpecificTupleClassSort" to match the regular expression ^[a-z_][a-z0-9_]*$.(Â‚Íşÿÿÿÿ8¤¥±ŠÚ.
-€python:S117"]Rename this local variable "SortedTuples" to match the regular expression ^[_a-z][a-z0-9_]*$.(’¹Âùüÿÿÿÿ8×õÏŠÚ.
-xpython:S1172"ZRename this local variable "finalCode" to match the regular expression ^[_a-z][a-z0-9_]*$.(÷Éê8Á…©öÓ.
-lpython:S117"URename this parameter "TupleList" to match the regular expression ^[_a-z][a-z0-9_]*$.(ŞŒÌ›
-=python:S125I"Remove this commented out code.(ûÑä¹8­úıŠÚ.
-upython:S5795"QReplace this "is not" operator with "!="; identity operator is not reliable here.(’¹Âùüÿÿÿÿ8Çß¶ŠÚ.
-rpython:S117"[Rename this local variable "listObject" to match the regular expression ^[_a-z][a-z0-9_]*$.(´¦Ë·
-Bpython:S125"Remove this commented out code.(øØİˆşÿÿÿÿ8­úıŠÚ.
-upython:S117"WRename this local variable "Lesser" to match the regular expression ^[_a-z][a-z0-9_]*$.(í°™8¤¥±ŠÚ.
-=python:S1256"Remove this commented out code.(İÍ¸8Šï‹Ú.
-zpython:S117#"^Rename this local variable "NumberRemoved" to match the regular expression ^[_a-z][a-z0-9_]*$.(’‡¡¢şÿÿÿÿ
-npython:S1542'"ORename function "Crossover" to match the regular expression ^[a-z_][a-z0-9_]*$.(íïöÎ8Á…©öÓ.
-zpython:S117"WRename this local variable "Zipper" to match the regular expression ^[_a-z][a-z0-9_]*$.(„ÿöÀÿÿÿÿÿ8”ŞÏŠÚ.
-xpython:S117"URename this local variable "Code" to match the regular expression ^[_a-z][a-z0-9_]*$.(åùúÁûÿÿÿÿ8ŒÇ–Ô.
-qpython:S15421"MRename function "Mutaion" to match the regular expression ^[a-z_][a-z0-9_]*$.(÷Ôğäøÿÿÿÿ8Á…©öÓ.

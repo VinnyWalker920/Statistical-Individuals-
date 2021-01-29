@@ -1,11 +1,15 @@
 from itertools import zip_longest
 from math import ceil
 from random import randint, choice
-
+import matplotlib.pyplot as plt
+import matplotlib
 import numpy as np
 from scipy.stats import percentileofscore
+from sklearn.metrics import r2_score
+
 
 from subject import Member
+from scipy.optimize import curve_fit
 
 
 def MaxTupleClassSort(TupleList):
@@ -41,8 +45,8 @@ def Mutaion(code):
     finalCode = []
     for i in code:
         x = i.copy()
-        # x[randint(0, len(x) - 1)] = np.random.randint(1, 100)
-        x[randint(0, len(x) - 1)] = np.random.uniform(low=0.01, high=1.0)
+        x[randint(0, len(x) - 1)] = np.random.randint(1, 100)
+        # x[randint(0, len(x) - 1)] = np.random.uniform(low=0.01, high=1.0)
         finalCode.append(x)
     return finalCode
 
@@ -62,7 +66,7 @@ class Environment:
         highestPredictedNumber.sort()
         highestPredictedNumber.reverse()
         AmmountOfOptimalValues = len([i.PredictorNumber for i in self.Population if i == 50])#TODO: Make Dynamic
-        percentileOfOptimalValues = percentileofscore(sorted([i.PredictorNumber for i in self.Population]),.9)
+        percentileOfOptimalValues = percentileofscore(sorted([i.PredictorNumber for i in self.Population]),90)
         str = f"Population Size: {sizeOfPopulation} \n"\
               f"Average Score: {avgPredictedNumber} \n" \
               f"Highest Score: {highestPredictedNumber[0]}\n"\
@@ -107,6 +111,7 @@ def ProCreate(dom, sub):
 
     return children
 
+y_vals = []
 
 #Genetic Algorithm Implementation V1
 env = Environment(100, .75)
@@ -124,6 +129,51 @@ for epoch in range(500):
     env.CropPopulation()
     env.AddChildren(children)
     env.MergeChildren()
+    y_vals.append(len(env.Population))
     print("epoch " + str(epoch+1) + "/500\n" + str(env) + "\n")
 
 env.SortPopulation()
+
+
+
+
+x_vals= range(0,len(y_vals))
+plt.scatter(x_vals,y_vals)
+plt.ylabel("# of Cells")
+plt.xlabel("Time(t) in Generations")
+#
+# mymodel1 = np.poly1d(np.polyfit(x_vals, y_vals, 10))
+# mymodel2 = np.poly1d(np.polyfit(x_vals, y_vals, 5))
+# mymodel3 = np.poly1d(np.polyfit(x_vals, y_vals, 3))
+
+myline = np.linspace(0, 500, 1000000)
+
+
+# plt.plot(myline, mymodel1(myline))
+# plt.plot(myline, mymodel2(myline))
+# plt.plot(myline, mymodel3(myline))
+# print("r^2 ", r2_score(y_vals, mymodel1(x_vals)))
+# print("r^2 ", r2_score(y_vals, mymodel2(x_vals)))
+# print("r^2 ", r2_score(y_vals, mymodel3(x_vals)))
+
+best_degree= []
+for i in range(1,10):
+    m = np.poly1d(np.polyfit(x_vals, y_vals, i))
+    best_degree.append(r2_score(y_vals, m(x_vals)))
+
+bd = best_degree.index(max(best_degree)) - 1
+
+coeff = np.polyfit(x_vals, y_vals, bd)
+print(coeff)
+mymodel = np.poly1d(coeff)
+
+plt.plot(myline, mymodel(myline))
+print(bd)
+print("r^2 ", r2_score(y_vals, mymodel(x_vals)))
+
+plt.show()
+
+
+
+
+
